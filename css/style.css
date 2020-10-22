@@ -72,19 +72,31 @@ a {
   width: 50%;
 }
 
-/* Phone */
+#company-page {
+  display: flex;
+  margin: 30px;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+#company-about {
+
+}
+
+/*Phone */
 @media screen and (max-width: 375px) {
   .nav-bar {
     flex-wrap: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100px;
+    flex-direction: row;
+    height: 40px;
+    width: 10x;
     position: fixed;
     justify-content: flex-start;
   }
 
   .nav-bar h1 {
-    flex-direction: row;
+    flex-direction: column;
   }
 
   #front-page-content {
@@ -105,10 +117,19 @@ a {
     flex-direction: column;
     margin-left: 140px;
   }
+  
+  #company-page {
+    flex-direction: column;
+    margin: 30px;
+  }
+}
+
+@media screen and (min-width: 300px) {
+  
 }
 
 /* Tablet */
-@media screen and (max-width: 1024) {
+@media screen and (max-width: 1024px) {
   .nav-bar {
     flex-wrap: wrap;
     flex-direction: column-reverse;
