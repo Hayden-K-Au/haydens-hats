@@ -1,81 +1,121 @@
+/* * {
+  box-sizing: border-box;
+} */
+
 body {
-    margin: 0;
+  margin: 0;
 }
 
 h1 {
-    font-size: 28px;
+  font-size: 28px;
 }
 
-h1, h4, a {
-    font-family: arial;
+h1,
+h4,
+a {
+  font-family: arial;
 }
 
-.banner {
-    background-color: darkcyan;
+/* .banner {
 
+} */
+
+.nav-button {
+  margin: 10px 30px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
 }
 
 .nav-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: darkcyan;
 }
 
 .product-image {
-    width: 200px;
+  width: 200px;
 }
 
 .products-tile {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 20px;
-}
-
-.main-title {
-    color: red;
-}
-
-.main-title2 {
-    color: blue;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
 }
 
 #products-content {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-nav, a {
-    text-decoration: none;
-    text-align: center;
+nav {
+  display: flex;
 }
 
-@media screen and (max-width: 700px) {
-    .nav-bar {
-        flex-direction: column-reverse;
-    }
-
-    #products-content {
-        flex-direction: column;
-    }
+a {
+  text-decoration: none;
+  text-align: center;
 }
-
-@media screen and (max-width: 1366){
-    .nav-bar {
-        display: flex;
-    }
-}
-
 
 #front-page-content {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    align-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  align-content: center;
 }
 
 #front-page-img {
-    height: auto;
-    width: 50%;
+  height: auto;
+  width: 50%;
+}
+
+/* Phone */
+@media screen and (max-width: 375px) {
+  .nav-bar {
+    flex-wrap: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100px;
+    position: fixed;
+    justify-content: flex-start;
+  }
+
+  .nav-bar h1 {
+    flex-direction: row;
+  }
+
+  #front-page-content {
+    margin-top: 0;
+  }
+
+  #front-page-img {
+    margin-left: 150px;
+    background-color: darkcyan;
+  }
+
+  nav {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  #products-content {
+    flex-direction: column;
+    margin-left: 140px;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 1024) {
+  .nav-bar {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  nav {
+    justify-content: flex-start;
+    flex-direction: column
+  }
 }
