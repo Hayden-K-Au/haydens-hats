@@ -12,20 +12,29 @@
     <div class="banner nav-bar">
         <h1>🎩 Hayden's Hats</h1>
         <nav>
-            <a href="../index.html">Home</a> |
-            <a href="products.html">Products</a> |
-            <a href="company.html">Company</a> |
-            <a href="contact.html">Contact</a> |
+            <a href="../index.html" class="nav-button">Home</a>
+            <a href="products.html" class="nav-button">Products</a>
+            <a href="company.html" class="nav-button">Company</a>
+            <a href="contact.html" class="nav-button">Contact</a>
         </nav>
     </div>
 
-    <p>
-        Please fill out the form, and we will get in touch with you.
-    </p>
-    <form>
-        <label for="name">Name</label>
-        <input type="text" id="name">
-    </form>
+    <div id="contact-page">
+        <p>
+            Please fill out the form, and we will get in touch with you.
+        </p>
+        <form id="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name">
+            <label for="number">Number</label>
+            <input type="type" id="number">
+            <label for="email">Email</label>
+            <input type="type" id="email">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message"></textarea>
+            <input type="submit" id="contact-submit"> 
+        </form>
+    </div>
 </body>
 
 </html>
