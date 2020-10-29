@@ -1,0 +1,199 @@
+/* * {
+  box-sizing: border-box;
+} */
+
+@mixin vertical-flexbox {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  margin: 0;
+  background-color: ivory;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h1,
+h4,
+a {
+  font-family: arial;
+}
+
+/* .banner {
+
+} */
+
+.nav-button {
+  margin: 10px 30px;
+  background-color: ivory;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: darkcyan;
+}
+
+.product-image {
+  width: 200px;
+}
+
+.products-tile {
+  align-items: center;
+  margin: 20px;
+}
+
+#products-content {
+  @include vertical-flexbox();
+  align-content: center;
+}
+
+nav {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+}
+
+#front-page-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  align-content: center;
+}
+
+#front-page-img {
+  height: auto;
+  width: 50%;
+}
+
+#company-page {
+  display: flex;
+  margin: 30px;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+#company-about {
+  display: flex;
+}
+
+#contact-page {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+#contact-submit {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+#contact-submit:hover {
+  background-color: silver;
+}
+
+label {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#contact-message {
+  width: 400px;
+  height: 100px;
+}
+
+#company-img {
+  width: 40%;
+}
+
+#company-about {
+  display: flex;
+  text-align: center;
+}
+
+/*Phone */
+@media screen and (max-width: 375px) {
+  .nav-bar {
+    flex-wrap: flex;
+    flex-direction: row;
+    height: 40px;
+    width: 10x;
+    position: fixed;
+    justify-content: flex-start;
+  }
+
+  .nav-bar h1 {
+    flex-direction: column;
+  }
+
+  #front-page-content {
+    margin-top: 0;
+  }
+
+  #front-page-img {
+    margin-left: 150px;
+    background-color: darkcyan;
+  }
+
+  nav {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  #products-content {
+    flex-direction: column;
+    margin-left: 140px;
+  }
+
+  #company-page {
+    flex-direction: column;
+    margin: 30px;
+  }
+  
+
+  #contact-form {
+    max-width: 90%;
+
+  }
+}
+
+@media screen and (min-width: 300px) {
+
+  /* #contact-form {
+    ;
+  } */
+
+}
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+  .nav-bar {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  nav {
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+}
