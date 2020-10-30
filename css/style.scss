@@ -2,6 +2,8 @@
   box-sizing: border-box;
 } */
 
+$primary-colour: paleturquoise;
+
 @mixin vertical-flexbox {
   display: flex;
   flex-direction: column;
@@ -9,7 +11,7 @@
 
 body {
   margin: 0;
-  background-color: ivory;
+  background-color: $primary-colour;
 }
 
 h1 {
